@@ -167,7 +167,7 @@ body {
 
 @media (min-width: 60em) {
   .testimonial[data-color=purple] {
-    background-image: url(../../images/bg-pattern-quotation.svg);
+    background-image: url(./../../images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position: 30em 0; /* < 400px */
   }
