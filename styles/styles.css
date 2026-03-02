@@ -94,26 +94,22 @@ body {
   }
 }
 /* ----- Componenets [blocks, exceptions] ----- */
-.testimonials {
+.articles {
+  /* renamed from .testimonials */
   gap: 2.75em;
   display: flex;
   flex-wrap: wrap;
 }
 
 @media screen and (min-width: 60em) {
-  .testimonials {
+  .articles {
+    /* updated here too */
     display: grid;
     grid-template-areas: "one one two five" "three four four five";
     gap: 2em;
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.testimonial-header {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
 .testimonial {
   padding: var(--padding-testimonial, 1.75rem); /* 28px */
   border-radius: 0.5em;
@@ -138,6 +134,12 @@ body {
     grid-area: five;
   }
 }
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
 .avatar {
   width: 2.5em;
   aspect-ratio: 1/1;
@@ -208,6 +210,18 @@ body {
 /* ----- Utilities ----- */
 .relative {
   position: relative;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
