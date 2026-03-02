@@ -134,6 +134,33 @@ use `@use "file-name"` or `@import "file-name"` at the top.
 
 `@use` is more modern,preferred and has a performance advantage.
 
+
+#### CSS Files Nesting Level
+
+for links to work:
+
+These have to be the same level as the 
+.scss folder they are compiling from.
+
+my file structure was:
+
+styles/
+    - scss/
+    -- styles.scss
+    - styles.css
+
+Although this wasn't a problem on my local server,
+my github pages relative links to assets didn't work
+
+To solve this, I changed my file structure to:
+
+styles/
+- scss/
+-- styles.scss
+- css/
+-- styles.css
+
+
 ### Continued development
 
 #### Continued-Development--HTML
