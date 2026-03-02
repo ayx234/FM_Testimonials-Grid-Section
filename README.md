@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/ayx234/FM-Four_Card_Feature_Section)
-- [Live site](https://ayx234.github.io/FM-Four_Card_Feature_Section)
+- [Solution](https://github.com/ayx234/FM_Testimonials-Grid-Section)
+- [Live site](https://ayx234.github.io/FM_Testimonials-Grid-Section)
 
 ## My process
 
@@ -55,10 +55,11 @@ Users should be able to:
 
 #### HTML and CSS
 
-A visually hidden element with css rule `position: absolute` will still
-mess up a grid section layed out with `grid-template-areas`.
-The fix is to move wrap the grid items in an element specified for
-that lay out and adjust the related css.
+A visually hidden element with css rule `position: absolute` will still mess up a grid section layed-out with `grid-template-areas`.
+
+The fix:
+- Don't include the visually hidden element in the grid container.
+- Wrap the grid items in a grid container that doesn't include the visually hidden element
 
 Original structure:
 
