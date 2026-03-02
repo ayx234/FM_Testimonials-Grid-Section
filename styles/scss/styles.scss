@@ -58,19 +58,19 @@ body {
 	.testimonial:is(:first-child) {
 		grid-area: one;
 	}
-	
+
 	.testimonial:is(:nth-child(2)) {
 		grid-area: two;
 	}
-	
+
 	.testimonial:is(:nth-child(3)) {
 		grid-area: three;
 	}
-	
+
 	.testimonial:is(:nth-child(4)) {
 		grid-area: four;
 	}
-	
+
 	.testimonial:is(:last-child) {
 		grid-area: five;
 	}
@@ -109,7 +109,18 @@ body {
 
 @media (min-width: 60em) {
 	.testimonial[data-color="purple"] {
+		/* IMPORTANT
+		background-image: url(../../images/bg-pattern-quotation.svg);
+		doesn't work on github pages and changint the relative path to
 		background-image: url(./../../images/bg-pattern-quotation.svg);
+		(adding a `./` for the current folder) in my .scss folder
+		doesn't work either because the sass compiler removes the
+		added `./' in the compiled folder.
+
+		I will try using a root based relative path
+
+		*/
+		background-image: url(/images/bg-pattern-quotation.svg);
 		background-repeat: no-repeat;
 		background-position: 30em 0; /* < 400px */
 	}
